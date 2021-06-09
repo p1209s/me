@@ -8,274 +8,367 @@
     <link rel="stylesheet" href="css/1.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Center the loader */
+        
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #e74c3c;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Add animation to "page content" */
+        
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+        
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
+    </style>
+
 </head>
 
-<body>
-    <header class="header">
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
 
-        <div class="site-nav">
-            <nav id="navigation" class="nav">
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <header class="header">
 
-                <ul class="group ul">
-                    <li class="listitem">
-                        <a href="index.html">
+            <div class="site-nav">
+                <nav id="navigation" class="nav">
+
+                    <ul class="group ul">
+                        <li class="listitem">
+                            <a href="index.html">
                             Priyank Shah
                         </a>
-                    </li>
+                        </li>
 
 
 
-                    <li class="list-item">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#project">Projects</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#qualifications">Qualifications</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#about">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                        <li class="list-item">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#project">Projects</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#qualifications">Qualifications</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-    </header>
+        </header>
 
-    <div class="container">
-        <img src="./images/me.jpg" alt="" class="img">
+        <div class="container">
+            <img src="./images/me.jpg" alt="" class="img">
 
-        <!--About-->
+            <!--About-->
 
-        <div id="about" class="about">
+            <div id="about" class="about">
 
 
-            <p>Hello , </p>
-            <h2>My Name is <em>Priyank Shah</em></h2>
-            <p>
-                I am a Student of Shri Sitarambhai Naranji Patel Institute of Technology and Research Centre, Bardoli, Surat where I am pursuing my Bachelor of Engineering (B.E.) in Computer Engineering.
-            </p>
-            <p>
-                I am a former Student of Ryan International School from where I have completed my Secondary Education and Higher Secondary Education.
-            </p>
-            <p>
-                I have a proficiency in programming languages like HTML/CSS. As a web developer I enjoy building websites and use my knowledge to make a difference in people's lives. That's why I am pretty excited to make a deep impact at a highly growing society.
-            </p>
-        </div>
-
-        <!--Skills-->
-
-        <div id="skills" class="skills">
-            <fieldset>
-                <legend class="legend">
-                    <h2>Skills Overview</h2>
-                </legend>
-                <table class="table" align="center">
-
-                    <tr>
-                        <td class="abc">
-                            Language
-                        </td>
-                        <td class="abc">
-                            Description
-                        </td>
-                        <td class="abc">
-                            Level
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="xyz">
-                            HTML
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                HTML is the standard markup language for Web pages.
-                            </p>
-                            <p>
-                                With HTML you can create your own Website.
-                            </p>
-                            <p>
-                                HTML is easy to learn - You will enjoy it!
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            Intermediate
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="xyz">
-                            CSS
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                CSS is the language we use to style an HTML document.
-                            </p>
-                            <p>
-                                CSS describes how HTML elements should be displayed.
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            Beginner
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="xyz">
-                            Bootstrap
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            Beginner
-                        </td>
-                    </tr>
-
-                </table>
-            </fieldset>
-        </div>
-
-        <!--Qualifications-->
-
-        <div id="qualifications" class="qualifications">
-            <fieldset>
-                <legend class="legend">
-                    <h2>
-                        Qualifications
-                    </h2>
-                </legend>
-                <table class="table">
-
-                    <tr>
-                        <td class="abc">
-                            Course
-                        </td>
-                        <td class="abc">
-                            Institute Name
-                        </td>
-                        <td class="abc">
-                            Year of Passing
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="xyz">
-                            <p>
-                                Bachelor of Engineering (B.E.), Computer Engineering
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                Shri Sitarambhai Naranji Patel Institute of Technology and Research Centre (GTU)
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                2021
-                            </p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="xyz">
-                            <p>
-                                Higher Secondary (XII), Science
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            Ryan International School (CBSE board)
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                2017
-                            </p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="xyz">
-                            <p>
-                                Secondary (X)
-                            </p>
-                        </td>
-                        <td class="xyz">
-                            Ryan International School (CBSE board)
-                        </td>
-                        <td class="xyz">
-                            <p>
-                                2015
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
-        </div>
-
-        <!--Project Work-->
-
-        <div id="project" class="project">
-            <fieldset>
-                <legend class="legend">
-                    <h2>
-                        My Projects
-                    </h2>
-                </legend>
+                <p>Hello , </p>
+                <h2>My Name is <em>Priyank Shah</em></h2>
                 <p>
-                    As in my field i.e., Web Development, more the practice more the fun. I have worked on a number of projects individually so you can check out my projects by clicking the links down below.
+                    I am a Student of Shri Sitarambhai Naranji Patel Institute of Technology and Research Centre, Bardoli, Surat where I am pursuing my Bachelor of Engineering (B.E.) in Computer Engineering.
                 </p>
-                <ul>
-                    <li>
-                        <p>
-                            To view my first ever project (my first ever website) "Demo Website" <a href="https://p1209s.github.io/index/" target="_blank" class="demo">Click here!</a> .
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            To visit my Game Overview Website <a href="https://p1209s.github.io/cr/" target="_blank" class="demo">Click here!</a> .
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            For my latest portfolio website (under development) <a href="https://p1209s.github.io/portfolio/" target="_blank" class="demo">Click here!</a> .
-                        </p>
-                    </li>
-                </ul>
-            </fieldset>
+                <p>
+                    I am a former Student of Ryan International School from where I have completed my Secondary Education and Higher Secondary Education.
+                </p>
+                <p>
+                    I have a proficiency in programming languages like HTML/CSS. As a web developer I enjoy building websites and use my knowledge to make a difference in people's lives. That's why I am pretty excited to make a deep impact at a highly growing society.
+                </p>
+            </div>
+
+            <!--Skills-->
+
+            <div id="skills" class="skills">
+                <fieldset>
+                    <legend class="legend">
+                        <h2>Skills Overview</h2>
+                    </legend>
+                    <table class="table" align="center">
+
+                        <tr>
+                            <td class="abc">
+                                Language
+                            </td>
+                            <td class="abc">
+                                Description
+                            </td>
+                            <td class="abc">
+                                Level
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="xyz">
+                                HTML
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    HTML is the standard markup language for Web pages.
+                                </p>
+                                <p>
+                                    With HTML you can create your own Website.
+                                </p>
+                                <p>
+                                    HTML is easy to learn - You will enjoy it!
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                Intermediate
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="xyz">
+                                CSS
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    CSS is the language we use to style an HTML document.
+                                </p>
+                                <p>
+                                    CSS describes how HTML elements should be displayed.
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                Beginner
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="xyz">
+                                Bootstrap
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                Beginner
+                            </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+            </div>
+
+            <!--Qualifications-->
+
+            <div id="qualifications" class="qualifications">
+                <fieldset>
+                    <legend class="legend">
+                        <h2>
+                            Qualifications
+                        </h2>
+                    </legend>
+                    <table class="table">
+
+                        <tr>
+                            <td class="abc">
+                                Course
+                            </td>
+                            <td class="abc">
+                                Institute Name
+                            </td>
+                            <td class="abc">
+                                Year of Passing
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="xyz">
+                                <p>
+                                    Bachelor of Engineering (B.E.), Computer Engineering
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    Shri Sitarambhai Naranji Patel Institute of Technology and Research Centre (GTU)
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    2021
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="xyz">
+                                <p>
+                                    Higher Secondary (XII), Science
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                Ryan International School (CBSE board)
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    2017
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="xyz">
+                                <p>
+                                    Secondary (X)
+                                </p>
+                            </td>
+                            <td class="xyz">
+                                Ryan International School (CBSE board)
+                            </td>
+                            <td class="xyz">
+                                <p>
+                                    2015
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <!--Project Work-->
+
+            <div id="project" class="project">
+                <fieldset>
+                    <legend class="legend">
+                        <h2>
+                            My Projects
+                        </h2>
+                    </legend>
+                    <p>
+                        As in my field i.e., Web Development, more the practice more the fun. I have worked on a number of projects individually so you can check out my projects by clicking the links down below.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                To view my first ever project (my first ever website) "Demo Website" <a href="https://p1209s.github.io/index/" target="_blank" class="demo">Click here!</a> .
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                To visit my Game Overview Website <a href="https://p1209s.github.io/cr/" target="_blank" class="demo">Click here!</a> .
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                For my latest portfolio website (under development) <a href="https://p1209s.github.io/portfolio/" target="_blank" class="demo">Click here!</a> .
+                            </p>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
         </div>
 
-    </div>
 
+        <!--Contact-->
 
-    <!--Contact-->
+        <div id="contact" class="contact">
+            <img src="./images/me.jpg" alt="" class="img1">
 
-    <div id="contact" class="contact">
-        <img src="./images/me.jpg" alt="" class="img1">
-
-        <p>
-            Like What You See ?
-        </p>
-        <h2>
-            I'd love to hear from you!
-        </h2>
-        <a href="mailTo:priyankshah53310@gmail.com" class="contactbutton">
+            <p>
+                Like What You See ?
+            </p>
+            <h2>
+                I'd love to hear from you!
+            </h2>
+            <a href="mailTo:priyankshah53310@gmail.com" class="contactbutton">
                 Get in touch!
             </a>
+        </div>
+
+
+        <footer class="footer">
+            <p>
+                &copy; Copyright Priyank Shah 2020. Hosted with ❤️ by GitHub.
+            </p>
+        </footer>
     </div>
 
+    <script>
+        var myVar;
 
-    <footer class="footer">
-        <p>
-            &copy; Copyright Priyank Shah 2020. Hosted with ❤️ by GitHub.
-        </p>
-    </footer>
+        function myFunction() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+
 </body>
 
 </html>
