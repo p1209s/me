@@ -252,8 +252,10 @@ header p {
     }
 }
 
-.skills {
-    padding-top: 60px;
+.skills,
+.qualifications,
+.projects {
+    padding-top: 100px;
 }
 
 .legend {
@@ -264,13 +266,8 @@ header p {
     text-align: center;
 }
 
-.qualifications {
-    padding-top: 60px;
-}
-
-.project {
+.projects {
     padding-bottom: 40px;
-    padding-top: 60px;
 }
 
 .demo {
