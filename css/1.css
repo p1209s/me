@@ -202,18 +202,6 @@ header p {
     border-radius: 30%;
 }
 
-
-/* @media screen and (max-width: 500px) {
-    .img {
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        border-radius: 0;
-    }
-} */
-
 .container {
     max-width: 940px;
     margin-left: auto;
@@ -247,7 +235,6 @@ header p {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        /* width: 50%; */
         border-radius: 0;
     }
 }
@@ -317,15 +304,8 @@ header p {
 }
 
 .abc {
-    /* background-color: black; */
     color: darkviolet;
 }
-
-
-/* .xyz {
-    background-color: lightskyblue;
-    color: black;
-} */
 
 
 /*loader*/
