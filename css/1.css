@@ -202,7 +202,8 @@ header p {
     border-radius: 30%;
 }
 
-@media screen and (max-width: 500px) {
+
+/* @media screen and (max-width: 500px) {
     .img {
         float: none;
         display: block;
@@ -211,7 +212,7 @@ header p {
         width: 50%;
         border-radius: 0;
     }
-}
+} */
 
 .container {
     max-width: 940px;
@@ -242,6 +243,12 @@ header p {
     }
     .img {
         padding-top: 60px;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
+        border-radius: 0;
     }
 }
 
@@ -313,14 +320,15 @@ header p {
 }
 
 .abc {
-    background-color: black;
-    color: yellow;
+    /* background-color: black; */
+    color: darkviolet;
 }
 
-.xyz {
+
+/* .xyz {
     background-color: lightskyblue;
     color: black;
-}
+} */
 
 
 /*loader*/
