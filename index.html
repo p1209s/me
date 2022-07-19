@@ -5,43 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyank Shah | Student and Web Developer</title>
-    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
-    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
-<body onload="myFunction()" style="margin:0;">
-    <div id="loader"></div>
+<body>
 
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div>
         <header class="header">
 
             <div class="site-nav">
+                <nav id="navigation" class="nav">
 
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">Priyank Shah</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#about">About</a>
-                                <a class="nav-link" href="#skills">Skills</a>
-                                <a class="nav-link" href="#qualifications">Qualifications</a>
-                                <a class="nav-link" href="#projects">Projects</a>
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </div>
+                    <ul class="group ul">
+                        <div class="ul-listitem">
+                            <li class="listitem">
+                                <a href="index.html">Priyank Shah</a>
+                            </li>
                         </div>
-                    </div>
+
+                        <div class="ul-list-item">
+                            <li class="list-item">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#project">Projects</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </div>
+
+                    </ul>
                 </nav>
             </div>
 
         </header>
-        <div class="container-fluid">
-            <div class="container ps-5 pe-5">
+
+        <div class="container">
+            <div style="display: flex; gap: 30px;">
                 <img src="./images/me.jpg" alt="" class="img">
 
                 <!--About-->
@@ -50,216 +58,198 @@
                     <p>Hello , </p>
                     <h2>My Name is <em>Priyank Shah</em></h2>
                     <p>
-                        I am a former Student of Shri Sitarambhai Naranji Patel Institute of Technology and Research Centre (SNPIT&RC) (Affiliated to Gujarat Technological University commonly known as "GTU"), Bardoli, Surat from where I have pursued my Bachelor of Engineering
-                        (B.E.) in Computer Engineering.
+                        I love applying responsive web design concepts and watching web pages compressed into mobile screens and still look amazing. It's oddly satisfying.
                     </p>
                     <p>
-                        I am a former Student of Ryan International School (CBSE Board) from where I have completed my Secondary Education and Higher Secondary Education.
-                    </p>
-                    <p>
-                        I have a proficiency in programming languages like HTML/CSS, Bootstrap, GitHub. As a web developer I enjoy building websites and use my knowledge to make a difference in people's lives. That's why I am pretty excited to make a deep impact at a highly
-                        growing society.
+                        My specialties include quickly learning new skills and programming languages, problem solving, responsive design principles, website optimization. So far I have HTML, CSS, jQuery, Bootstrap, Basic JavaScript and GitHub under my belt. I've started learning
+                        Advanced JavaScript and ReactJS. I am still enthusiastically grabbing onto any other programming languages, frameworks or principles can integrate into the coding web in my head.
                     </p>
                 </div>
 
-                <!--Skills-->
+            </div>
 
-                <div id="skills" class="skills">
-                    <fieldset>
-                        <legend class="legend">
-                            <h2>Skills Overview</h2>
-                        </legend>
-                        <table class="table">
+            <!--Skills-->
 
-                            <tr>
-                                <td class="abc">
-                                    Language
-                                </td>
-                                <td class="abc">
-                                    Description
-                                </td>
-                                <td class="abc">
-                                    Level
-                                </td>
-                            </tr>
+            <div id="skills" class="skills">
 
-                            <tr>
-                                <td class="xyz">
-                                    HTML
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it!
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    Intermediate
-                                </td>
-                            </tr>
+                <h2>Skills Overview</h2>
 
-                            <tr>
-                                <td class="xyz">
-                                    CSS
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    Intermediate
-                                </td>
-                            </tr>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="card-title">
+                            Web Development
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
 
-                            <tr>
-                                <td class="xyz">
-                                    Bootstrap
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    Intermediate
-                                </td>
-                            </tr>
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="card-title">
+                            HTML
+                        </div>
+                        <div class="card-body">
+                           <p>
+                            The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages. 
 
-                            <tr>
-                                <td class="xyz">
-                                    GitHub
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        GitHub is a Git repository hosting service which is also a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects.
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    Beginner
-                                </td>
-                            </tr>
+                           </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
 
-                        </table>
-                    </fieldset>
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-brands fa-css3"></i>
+                        </div>
+                        <div class="card-title">
+                            CSS
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics. 
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <div class="card-title">
+                            Bootstrap
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Bootstrap is an HTML, CSS & JS Library that focuses on simplifying the development of informative web pages (as opposed to web apps). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-brands fa-js-square"></i>
+                        </div>
+                        <div class="card-title">
+                            JavaScript
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. 
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="card-title">
+                            GitHub
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration, and wikis for every project. Headquartered in California, it has been a subsidiary of Microsoft since 2018. It is commonly used to host open-source projects. It is the largest source code host as of November 2021. 
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
+                    
                 </div>
 
-                <!--Qualifications-->
+            </div>
 
-                <div id="qualifications" class="qualifications">
-                    <fieldset>
-                        <legend class="legend">
-                            <h2>
-                                Qualifications
-                            </h2>
-                        </legend>
-                        <table class="table">
+            <!--Project-->
 
-                            <tr>
-                                <td class="abc">
-                                    Course
-                                </td>
-                                <td class="abc">
-                                    Institute Name
-                                </td>
-                                <td class="abc">
-                                    Year of Passing
-                                </td>
-                            </tr>
+            <div id="project" class="project">
 
-                            <tr>
-                                <td class="xyz">
-                                    <p>
-                                        Bachelor of Engineering (B.E.), Computer Engineering
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        Shri Sitarambhai Naranji Patel Institute of Technology and Research Centre (GTU)
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        2021
-                                    </p>
-                                </td>
-                            </tr>
+                <h2>
+                    Projects Overview
+                </h2>
 
-                            <tr>
-                                <td class="xyz">
-                                    <p>
-                                        Higher Secondary (XII), Science
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        Ryan International School (CBSE board)
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        2017
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="xyz">
-                                    <p>
-                                        Secondary (X)
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        Ryan International School (CBSE board)
-                                    </p>
-                                </td>
-                                <td class="xyz">
-                                    <p>
-                                        2015
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </fieldset>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/1.PNG" alt="Learning CSS">
+                        </div>
+                        <div class="card-title">
+                            Learning CSS
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://p1209s.github.io/index" target="_blank"><button class="card-btn">Check it out !</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/2.PNG" alt="Game Overview Website">
+                        </div>
+                        <div class="card-title">
+                            Game Overview Website
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://p1209s.github.io/cr" target="_blank"><button class="card-btn">Check it out !</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/4.PNG" alt="Consultation Website">
+                        </div>
+                        <div class="card-title">
+                            Consultation Website
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://p1209s.github.io/web-site" target="_blank"><button class="card-btn">Check it out !</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/5.PNG" alt="Airplane Reservation Website">
+                        </div>
+                        <div class="card-title">
+                            Airplane Reservation Website
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://p1209s.github.io/air" target="_blank"><button class="card-btn">Check it out !</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/6.PNG" alt="Temperature Conversion Website">
+                        </div>
+                        <div class="card-title">
+                            Temperature Conversion Website
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://p1209s.github.io/temperature-conversion" target="_blank"><button class="card-btn">Check it out !</button></a>
+                        </div>
+                    </div>
                 </div>
-
-                <!--Project Work-->
-
-                <div id="projects" class="projects">
-                    <fieldset align="left">
-                        <legend class="legend">
-                            <h2>
-                                My Projects
-                            </h2>
-                        </legend>
-                        <p>
-                            As in my field i.e., Web Development, more the practice more the fun. I have worked on a number of projects individually so you can check out my projects by clicking the links down below.
-                        </p>
-                        <ul>
-                            <li>
-                                <p>
-                                    To view my first ever project (my first ever website) "Demo Website" <a href="https://p1209s.github.io/index/" target="_blank" class="demo">Click here!</a> .
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    To visit my Game Overview Website <a href="https://p1209s.github.io/cr/" target="_blank" class="demo">Click here!</a> .
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    For my latest portfolio website <a href="https://p1209s.github.io/portfolio/" target="_blank" class="demo">Click here!</a> .
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Air Reservation Website Design <a href="https://p1209s.github.io/air/" target="_blank" class="demo">Click here!</a>
-                                </p>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
-
+                
             </div>
 
         </div>
@@ -279,31 +269,23 @@
             <a href="mailTo:priyankshah53310@gmail.com" class="contactbutton">
                 Get in touch!
             </a>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
         </div>
 
 
         <footer class="footer">
             <p>
-                &copy; Copyright Priyank Shah 2020. Hosted with ❤️ by GitHub.
+                &copy; Copyright Priyank Shah 2022
             </p>
         </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
-    "></script>
-    <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 1500);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
-
 
 </body>
 
